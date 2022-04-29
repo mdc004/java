@@ -1,6 +1,7 @@
 # Inserimento da console
 
 Creare l'oggetto scanner
+
 `Scanner read = new Scanner(System.in)`
 
 In base al tipo di oggetto da inserire:
@@ -21,7 +22,7 @@ In base al tipo di oggetto da inserire:
 
 `System.out.println(read.nextShort())`
 
-### esempio
+### Esempio
 ```
 Scanner read = new Scanner(System.in)
 
