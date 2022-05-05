@@ -35,18 +35,21 @@ In base all' operazione che si desidera eseguire il file va aperto in:
 
 ### Scrivere sul file
 
-`  `
+` NomeVariabile2.writeObject( Object ) `
 
 ### Leggere da file
 
-`  `
+``` 
+  while( true ){
+    try{
+    
+    } catch(){
+    
+    }
+  }  
 
-> In Java un file non può essere aperto in append, tuttavia si può sviare a questo inconveniente con diversi metodi
+```
 
-### Chiusura di un file
-ogni tipo di file deve **sempre** essere chiuso, sia che sia stato aperto in lettura, sia in scrittura.
-
-` NomeVariabile1.close(); `
 
 ## File di testo
 
@@ -72,8 +75,8 @@ In base all'operazione che si desidera eseguire un file va aperto in:
 
 ```
   try {
-    FileReader NomeVariabile1 = new FileInputStream("NomeFile.estensione");
-    BufferedReader NomeVariabile2 = new ObjectInputStream(NomeVariabile1);
+    FileReader NomeVariabile1 = new FileReader("NomeFile.estensione");
+    BufferedReader NomeVariabile2 = new BufferedReader(NomeVariabile1);
   } catch (Exception e) {
     System.out.println("Eccezione: "+e.getMessage());
   }
@@ -95,10 +98,10 @@ esempio:
 
 ```
 
-> In Java un file non può essere aperto in append, tuttavia si può sviare a questo inconveniente con diversi metodi
+> In Java un file non può essere aperto in append, tuttavia si può sviare a questo inconveniente con diversi metodi.
 
 ### Chiusura di un file
-ogni tipo di file deve **sempre** essere chiuso, sia che sia stato aperto in lettura, sia in scrittura.
+ogni tipo di file deve **sempre** essere chiuso, sia che sia stato aperto in lettura, sia in scrittura, sia che sia di oggetti, sia che sia di testo.
 
 ` NomeVariabile1.close(); `
 
