@@ -39,12 +39,15 @@ In base all' operazione che si desidera eseguire il file va aperto in:
 
 ### Leggere da file
 
+` Object temp = NomeVariabile2.readObject() `
+
 ``` 
   while( true ){
     try{
-    
-    } catch(){
-    
+      Object temp = F.readObject();
+      f.flush();
+    } catch(EOFException e){
+      break;
     }
   }  
 
@@ -89,7 +92,7 @@ In base all'operazione che si desidera eseguire un file va aperto in:
 
 ### Leggere da file
 
-` NomeVariabile2.nextLine() `
+` String temp = NomeVariabile2.nextLine() `
 
 esempio:
 
@@ -104,6 +107,3 @@ esempio:
 ogni tipo di file deve **sempre** essere chiuso, sia che sia stato aperto in lettura, sia in scrittura, sia che sia di oggetti, sia che sia di testo.
 
 ` NomeVariabile1.close(); `
-
-
-
