@@ -13,7 +13,7 @@ In base all' operazione che si desidera eseguire il file va aperto in:
 
 ### Apertura di un file in scrittura (Output)
 
-```
+```java
   try {
     FileOutputStream NomeVariabile1 = new FileOutputStream("NomeFile.estensione");
     ObjectOutputStream NomeVariabile2 = new ObjectOutputStream(NomeVariabile1);
@@ -24,7 +24,7 @@ In base all' operazione che si desidera eseguire il file va aperto in:
 
 ### Apertura di un file in lettura (Input)
 
-```
+```java
   try {
     FileInputStream NomeVariabile1 = new FileInputStream("NomeFile.estensione");
     ObjectInputStream NomeVariabile2 = new ObjectInputStream(NomeVariabile1);
@@ -41,7 +41,7 @@ In base all' operazione che si desidera eseguire il file va aperto in:
 
 ` Object temp = NomeVariabile2.readObject() `
 
-``` 
+```java 
   while( true ){
     try{
       Object temp = F.readObject();
@@ -65,7 +65,7 @@ In base all'operazione che si desidera eseguire un file va aperto in:
 
 ### Apertura di un file in scrittura (Write)
 
-```
+```java
   try {
     FileWriter NomeVariabile1 = new FileWriter("NomeFile.estensione");
     PrintWriter NomeVariabile2 = new PrintWriter(NomeVariabile1);
@@ -76,7 +76,7 @@ In base all'operazione che si desidera eseguire un file va aperto in:
 
 ### Apertura di un file in lettura (Read)
 
-```
+```java
   try {
     FileReader NomeVariabile1 = new FileReader("NomeFile.estensione");
     BufferedReader NomeVariabile2 = new BufferedReader(NomeVariabile1);
@@ -96,7 +96,7 @@ In base all'operazione che si desidera eseguire un file va aperto in:
 
 esempio:
 
-```
+```java
   
 
 ```
