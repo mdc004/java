@@ -23,7 +23,8 @@ In base al tipo di oggetto da inserire:
 `System.out.println(read.nextShort())`
 
 ### Esempio
-```
+
+```java
 Scanner read = new Scanner(System.in)
 
 double score1 = read.nextDouble();
